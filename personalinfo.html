@@ -13,11 +13,11 @@
 </head>
 <body>
     <header>
-            APOORV GADIYA 
+            PERSONAL INFORMATION
             <h3>
                 <nav>
                     <ul style="display: inline;">
-                        <li style="display: inline;"><a href="personalinfo.html">Personal Information &nbsp;</a></li>
+                        <li style="display: inline;"><a href="index.html">Home &nbsp;</a></li>
                         <li style="display: inline;"><a href="education.html">Education &nbsp;</a></li>
                         <li style="display: inline;"><a href="experience.html">Experience &nbsp;</a></li>
                         <li style="display: inline;"><a href="projects.html">Projects &nbsp;</a></li>
@@ -31,9 +31,17 @@
     </header>
     <main>
         <div>
-            <img src="profile photo.png">
+            <img src ="profile photo.png">
         </div>
         <div style="text-shadow: 3px 2px 5px rgb(0, 255, 255);">¯\_(ツ)_/¯</div>
+        <div style="text-align: left; font-family: 'Courier New', Courier, monospace;">
+            Apoorv Gadiya
+            <br>
+            Contact : <a href="mailto:7apoorvg@gmail.com"> Mail</a>
+            <br>
+            A Quote for you Traveller :
+            <blockquote id="random-quote" style="text-shadow: 0 0 5px wheat;color: wheat;"></blockquote>
+        </div>
     </main>
     <footer>
         <div class="container">
@@ -58,5 +66,35 @@
       document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
     }
     setInterval(updateColor, 20);
+    const quotes = [
+    "The only limit to our realization of tomorrow will be our doubts of today.",
+    "Don't watch the clock; do what it does. Keep going.",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "It always seems impossible until it's done.",
+    "The future belongs to those who believe in the beauty of their dreams.",
+    "Your time is limited, don't waste it living someone else's life.",
+    "Success is stumbling from failure to failure with no loss of enthusiasm.",
+    "The only way to do great work is to love what you do.",
+    "Believe you can and you're halfway there.",
+    "Strive not to be a success, but rather to be of value.",
+    "I find that the harder I work, the more luck I seem to have.",
+    "The only place where success comes before work is in the dictionary.",
+    "Opportunities don't happen. You create them.",
+    "Success usually comes to those who are too busy to be looking for it.",
+    "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+    "Success is not in what you have, but who you are.",
+    "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.",
+    "Your attitude, not your aptitude, will determine your altitude.",
+    "Don't let yesterday take up too much of today.",
+    "The road to success and the road to failure are almost exactly the same."
+        ];
+
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            return quotes[randomIndex];
+        }
+
+        // Display a random quote
+        document.querySelector('#random-quote').innerText = getRandomQuote();
   </script>
 </html>

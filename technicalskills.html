@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Trispace&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3d9b18a04.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+            TECHINCAL SKILLS
+            <h3>
+                <nav>
+                    <ul style="display: inline;">
+                        <li style="display: inline;"><a href="index.html">Home &nbsp;</a></li>
+                        <li style="display: inline;"><a href="personalinfo.html">Personal Information &nbsp;</a></li>
+                        <li style="display: inline;"><a href="education.html">Education &nbsp;</a></li>
+                        <li style="display: inline;"><a href="experience.html">Experience &nbsp;</a></li>
+                        <li style="display: inline;"><a href="projects.html">Projects &nbsp;</a></li>
+                        <li style="display: inline;"><a href="achievements.html"> Achievements &nbsp;</a></li>
+                        
+                    </ul>  
+                </nav>
+                &nbsp;
+            </h3>
+    </header>
+    <main>
+        <div>
+            <img src="profile photo.png">
+        </div>
+        <div style="text-shadow: 3px 2px 5px rgb(0, 255, 255);">¯\_(ツ)_/¯</div>
+        <br><br><br>
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="event-date" style="background-color: #ffd4d4;"></div>
+                <div class="event-title">Languages</div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: #ffd4d4;">JAVA</button>
+                    <button class="rounded-button" style="background-color: #ffd4d4;">PYTHON</button>
+                    <button class="rounded-button" style="background-color: #ffd4d4;">C/C++</button>
+                    <button class="rounded-button" style="background-color: #ffd4d4;">SQL</button>
+                    <button class="rounded-button" style="background-color: #ffd4d4;">JAVASCRIPT</button>
+                    <button class="rounded-button" style="background-color: #ffd4d4;">HTML/CSS</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="event-date" style="background-color: #eab93e;"></div>
+                <div class="event-title">Developer Tools</div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: #eab93e;">GIT</button>
+                    <button class="rounded-button" style="background-color: #eab93e;">GITHUB</button>
+                    <button class="rounded-button" style="background-color: #eab93e;">ECLIPSE</button>
+                    <button class="rounded-button" style="background-color: #eab93e;">GOOGLE COLLAB</button>
+                    <button class="rounded-button" style="background-color: #eab93e;">VS CODE</button>
+                    <button class="rounded-button" style="background-color: #eab93e;">PYCHARM</button>
+                    <button class="rounded-button" style="background-color: #eab93e;">JUPYTER NOTEBOOK</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="event-date" style="background-color: #ea3e3e;"></div>
+                <div class="event-title"> Libraries </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: #ea3e3e;">APACHE POI</button>
+                    <button class="rounded-button" style="background-color: #ea3e3e;">SELENIUM</button>
+                    <button class="rounded-button" style="background-color: #ea3e3e;">SWING</button>
+                    <button class="rounded-button" style="background-color: #ea3e3e;">PANDAS</button>
+                    <button class="rounded-button" style="background-color: #ea3e3e;">NUMPY</button>
+                    <button class="rounded-button" style="background-color: #ea3e3e;">MATPLOTLIB</button>
+                </div>
+            </div>
+            <div class="timeline-end">
+                But Time is an illusion, isn't it ?
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="box" id="twitter" onclick="window.open('https://twitter.com/Apoorv7g', '_blank')">
+                <i class="fa-brands fa-square-x-twitter" style="color: #000000;"aria-hidden="true"></i>
+            </div>
+            <div class="box" id="github" onclick="window.open('https://github.com/APOORV7G', '_blank')">
+               <i class="fa-brands fa-github " style="color: #171515;" aria-hidden="true"></i>
+               <!--If you found this comment , Here is a cookie for you 🍪-->
+            </div>
+            <div class="box" id="linkedin" onclick="window.open('https://www.linkedin.com/in/apoorv-g7', '_blank')">
+                <i class="fa-brands fa-linkedin " style="color: #0e76a8;" aria-hidden="true"></i>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+<script>
+    let hue = 0;
+    function updateColor() {
+      hue = (hue + 1) % 360;
+      document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
+      document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
+    }
+    setInterval(updateColor, 20);
+  </script>
+</html>

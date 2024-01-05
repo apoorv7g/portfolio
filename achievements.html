@@ -13,15 +13,15 @@
 </head>
 <body>
     <header>
-            APOORV GADIYA 
+            ACHIEVEMENTS
             <h3>
                 <nav>
                     <ul style="display: inline;">
+                        <li style="display: inline;"><a href="index.html">Home &nbsp;</a></li>
                         <li style="display: inline;"><a href="personalinfo.html">Personal Information &nbsp;</a></li>
                         <li style="display: inline;"><a href="education.html">Education &nbsp;</a></li>
                         <li style="display: inline;"><a href="experience.html">Experience &nbsp;</a></li>
                         <li style="display: inline;"><a href="projects.html">Projects &nbsp;</a></li>
-                        <li style="display: inline;"><a href="achievements.html">Achievements &nbsp;</a></li>
                         <li style="display: inline;"><a href="technicalskills.html"> Technical Skills &nbsp;</a></li>
                         
                     </ul>  
@@ -34,6 +34,42 @@
             <img src="profile photo.png">
         </div>
         <div style="text-shadow: 3px 2px 5px rgb(0, 255, 255);">¯\_(ツ)_/¯</div>
+        <br><br><br>
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="event-date">2023-Jan</div>
+                <div class="event-title">INSEF-National Fair</div>
+                <div class="event-description">
+                    <li>
+                        <em>K.G. Dholakiya School - Rajkot</em>
+                    </li>
+                    <li>
+                        Finalist-Special Mention for G-STS
+                    </li>
+                </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: #4a4343;">HONOURABLE MENTION</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="event-date">2022-Nov</div>
+                <div class="event-title">INSEF-Regionals Fair</div>
+                <div class="event-description">
+                    <li>
+                        <em>Vagdevi Vilas School - Bangalore</em>
+                    </li>
+                    <li>
+                        Regional Champions - Winner : Gold-I
+                    </li>
+                </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: #ffb700;">GOLD</button>
+                </div>
+            </div>
+            <div class="timeline-end">
+                Only time will tell us the answers to these question! 
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container">
@@ -55,6 +91,7 @@
     let hue = 0;
     function updateColor() {
       hue = (hue + 1) % 360;
+      document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
       document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
     }
     setInterval(updateColor, 20);

@@ -1,16 +1,149 @@
-@font-face {
-    font-family: 'Lacquer';
-    src: url('Lacquer-Regular.ttf') format('truetype'),
-  }
-  
-header{
+  body{
+    display: grid;
+    background-color: black;
+    color: white;
+    place-items: center;
+    margin: 0;
     text-align: center;
-    color: beige;
-    /* font-family: 'Trispace', sans-serif;
-    font-size: larger; */
-    /* font-family: 'JetBrains Mono', monospace; */
+    font-family: "JetBrains Mono";
+    font-size: 28px;
+}
+header{
+    top: 0%;
+    position:absolute;
+    text-align: center;
+    font-size: 48px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: #ffffff;
+    color: transparent;
+    /* font-family: 'Trispace', sans-serif;*/
+    font-family: 'JetBrains Mono', monospace;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+    user-select: none;
+}
+ul{
+    padding-inline-start: 0px;
+}
+nav{
+    margin:0px;
+    float: left;
+    padding: 0px;
+    font-size: 30px;
+    text-shadow: none;
+    
+}
+h3{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+main{
+    top:230px;
+    position:relative;
+    user-select: none;
+    
+}
+footer{
+    background-image: linear-gradient(to right, rgb(0, 139, 81),rgb(0, 255, 255));
+    position: relative;
+    top: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+.container{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+.box {
+    margin-right: 10px;
+}
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 139, 81); 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 139, 81);
+}
+a:hover{
+    color:rgb(0, 255, 255);
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+}
+
+.timeline-event {
+    border-left: 2px solid rgb(0, 139, 81);
+    padding: 20px;
+    margin: 10px 0;
+    position: relative;
+    max-width: 600px;
+}
+.timeline-end
+{
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 2px solid #333;
+    padding: 20px;
+    margin: 10px 0;
+    position: relative;
+    max-width: 600px;
+    color: rgb(112, 0, 93);
+}
+.event-date {
+    position: absolute;
+    top: -15px;
+    left: -5px;
+    background-color: rgb(0, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.event-title {
+    margin-top: 10px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: wheat;
     font-family: 'Trispace', sans-serif;
 }
-body{
-    background-color: black;
+
+.event-description {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+}
+.rounded-button {
+    color: black;
+    border: none;
+    text-shadow: 0 0 1px black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #4a4343;
+    transition: background-color 0.3s ease;
+}
+.rounded-button:hover {
+    text-shadow: 0 0 3px black;
+    transform: translateY(1px);
 }
