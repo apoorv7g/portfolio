@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Lacquer';
+    src: url('Lacquer-Regular.ttf') format('truetype'),
+  }
+  
+header{
+    text-align: center;
+    color: beige;
+    /* font-family: 'Trispace', sans-serif;
+    font-size: larger; */
+    /* font-family: 'JetBrains Mono', monospace; */
+    font-family: 'Trispace', sans-serif;
+}
+body{
+    background-color: black;
+}
