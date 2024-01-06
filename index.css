@@ -38,16 +38,17 @@ h3{
     padding-left: 0px;
     margin-left: 0px;
 }
-@media screen and (max-width: 768px) {
-    main {
-       top: 430px;
-    }
-}
 main{
     top:230px;
     position:relative;
     user-select: none;
 }
+@media screen and (max-width: 768px) {
+    main {
+       top: 430px;
+    }
+}
+
 footer{
     background-image: linear-gradient(to right, rgb(0, 139, 81),rgb(0, 255, 255));
     position: relative;
