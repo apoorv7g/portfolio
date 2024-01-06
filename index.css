@@ -46,6 +46,8 @@ main{
 @media screen and (max-width: 768px) {
     main {
        top: 430px;
+       position: relative;
+       user-select: none;
     }
 }
 
