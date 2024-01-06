@@ -7,6 +7,7 @@
     text-align: center;
     font-family: "JetBrains Mono";
     font-size: 28px;
+    z-index: 2 ;
 }
 header{
     top: 0%;
@@ -38,10 +39,9 @@ h3{
     margin-left: 0px;
 }
 main{
-    top:230px;
+    top:430px;
     position:relative;
     user-select: none;
-    
 }
 footer{
     background-image: linear-gradient(to right, rgb(0, 139, 81),rgb(0, 255, 255));
@@ -60,7 +60,7 @@ footer{
     cursor: pointer;
 }
 img {
-    z-index: -1;
+    
     width: 200px;
     height: auto;
     border-radius: 50%;
