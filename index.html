@@ -43,6 +43,8 @@
             <img src="profile photo.png">
         </div>
         <div style="text-shadow: 3px 2px 5px rgb(0, 255, 255);">¯\_(ツ)_/¯</div>
+        <br><br>
+        <div>TL;DR <br><special onclick="window.open('https://apoorv7g.github.io/portfolio/Apoorv_Resume.pdf','_blank')" style="cursor: pointer;">Resume Link</special></div>
     </main>
     <footer>
         <div class="container">
@@ -65,6 +67,7 @@
     function updateColor() {
       hue = (hue + 1) % 360;
       document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
+      document.querySelector('special').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
     }
     setInterval(updateColor, 20);
   </script>

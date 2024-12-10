@@ -46,10 +46,25 @@
         <br><br><br>
         <div class="timeline">
             <div class="timeline-event">
+                <div class="event-date">current</div>
+                <div class="event-title"><em>Artificial Intelligence Intern</em></div>
+                <div><em><special onclick="window.open('https://www.santaan.in/', '_blank')" style="cursor: pointer;">Santaan AI</special></em></div>
+            </div>
+            <div class="timeline-event">
+                <div class="event-date">2024</div>
+                <div class="event-title"><em>Student Intern</em></div>
+                <div class="event-subtitle"><a href="https://ziroh.com/" target="_blank">Ziroh Labs</a></div>
+            </div>
+            <div class="timeline-event">
+                <div class="event-date">2024</div>
+                <div class="event-title"><em>Student Research Intern</em></div>
+                <div class="event-subtitle"><a href="https://sites.google.com/rvu.edu.in/centre-for-ie/home" target="_blank">CIEn @ RV University</a></div>
+            </div>
+            <div class="timeline-event">
                 <div class="event-date">20??</div>
-                <div class="event-title"><em>NULL</em></div>
+                <div class="event-title"><em>was NULL</em></div>
                 <div class="event-description">
-                    You can help me fill this gap.
+                    You can help me extend this list.
                 </div>
             </div>
             <div class="timeline-end">
@@ -78,6 +93,10 @@
     function updateColor() {
       hue = (hue + 1) % 360;
       document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
+      document.querySelectorAll('special').forEach((element) => {
+            element.style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
+        });
+
     }
     setInterval(updateColor, 20);
   </script>

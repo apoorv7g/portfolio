@@ -46,6 +46,11 @@
         <br><br><br>
         <div class="timeline">
             <div class="timeline-event">
+                <div class="event-date">20xx</div>
+                <div class="event-title"><special>A year of Wooden Spoons</special></div>
+                
+            </div>
+            <div class="timeline-event">
                 <div class="event-date">2023-Jan</div>
                 <div class="event-title">INSEF-National Fair</div>
                 <div class="event-description">
@@ -101,7 +106,7 @@
     function updateColor() {
       hue = (hue + 1) % 360;
       document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
-      document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
+      document.querySelector('special').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
     }
     setInterval(updateColor, 20);
   </script>
