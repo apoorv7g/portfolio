@@ -1,4 +1,3 @@
-<script>
 function check(referrerTag) {
     const visitorData = {
         visitStart: Date.now(),
@@ -55,4 +54,3 @@ Last Check: ${data.lastCheck || "N/A"}`
         }
     }
 }
-</script>
