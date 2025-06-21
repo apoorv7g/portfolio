@@ -7,9 +7,10 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+    check("Profile");
   gtag('config', 'G-T91E51YZ5V');
 </script>
+    <script src=check.js></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
@@ -44,7 +45,7 @@
         </div>
         <div style="text-shadow: 3px 2px 5px rgb(0, 255, 255);">¯\_(ツ)_/¯</div>
         <br><br>
-        <div>TL;DR <br><special onclick="window.open('https://apoorv7g.github.io/portfolio/Apoorv_Resume.pdf','_blank')" style="cursor: pointer;">Resume Link</special></div>
+        <div>TL;DR <br><special onclick="check("Resume");window.open('https://apoorv7g.github.io/portfolio/Apoorv_Resume.pdf','_blank')" style="cursor: pointer;">Resume Link</special></div>
     </main>
     <footer>
         <div class="container">
@@ -70,5 +71,6 @@
       document.querySelector('special').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
     }
     setInterval(updateColor, 20);
+    
   </script>
 </html>
