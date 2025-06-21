@@ -1,0 +1,58 @@
+<script>
+function check(referrerTag) {
+    const visitorData = {
+        visitStart: Date.now(),
+        refTag: referrerTag,
+        active: true,
+        intervals: 0
+    };
+
+    const intervalId = setInterval(() => {
+        visitorData.intervals++;
+        visitorData.lastCheck = new Date().toISOString();
+    }, 20000);
+
+    window.addEventListener("beforeunload", () => {
+        clearInterval(intervalId);
+        visitorData.timeSpent = Math.floor((Date.now() - visitorData.visitStart) / 1000);
+        sendData(visitorData);
+    });
+
+    async function sendData(data) {
+        try {
+            const ipInfo = await fetch("https://ipapi.co/json/").then(res => res.json());
+
+            const payload = {
+                content: `New Visitor Report
+
+IP: ${ipInfo.ip}
+City: ${ipInfo.city}
+Region: ${ipInfo.region}
+Country: ${ipInfo.country_name}
+ISP: ${ipInfo.org}
+
+Browser: ${navigator.userAgent}
+Screen: ${screen.width}x${screen.height}
+Language: ${navigator.language}
+Timezone: ${Intl.DateTimeFormat().resolvedOptions().timeZone}
+
+Ref Tag: ${data.refTag}
+Page: ${window.location.href}
+Time Spent: ${data.timeSpent} seconds
+Active Checks: ${data.intervals}
+Last Check: ${data.lastCheck || "N/A"}`
+            };
+
+            const url = "https://discord.com/api/webhooks/1385864354813055006/tfewUwoXZHepl1RQoRZI2C_IDj-FMJF22rT05cVHK8xFMMq2niUM73Vly3ARfyhqVTok";
+            await fetch(url, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+
+        } catch (err) {
+            console.error("Visitor logging failed:", err);
+        }
+    }
+}
+</script>
