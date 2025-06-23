@@ -21,7 +21,7 @@ Ref Tag: ${referrerTag}
 Page: ${window.location.href}`
             };
 
-            const url = "https://discord.com/api/webhooks/1385864354813055006/tfewUwoXZHepl1RQoRZI2C_IDj-FMJF22rT05cVHK8xFMMq2niUM73Vly3ARfyhqVTok";
+            const url = "https://flask-hello-world-topaz-six-49.vercel.app/log";
             await fetch(url, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
