@@ -21,7 +21,7 @@ Ref Tag: ${referrerTag}
 Page: ${window.location.href}`
             };
 
-            const url = "https://flask-hello-world-topaz-six-49.vercel.app/log/pure-athera";
+            const url = "https://flask-hello-world-topaz-six-49.vercel.app/log";
             await fetch(url, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
