@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T91E51YZ5V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T91E51YZ5V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-T91E51YZ5V');
-</script>
+        gtag('config', 'G-T91E51YZ5V');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
@@ -20,90 +21,110 @@
     <script src="https://kit.fontawesome.com/d3d9b18a04.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
+
 <body>
     <header>
-            PERSONAL INFORMATION
-            <h3>
-                <nav>
-                    <ul style="display: inline;">
-                        <li style="display: inline;"><a href="index.html">Home &nbsp;</a></li>
-                        <li style="display: inline;"><a href="education.html">Education &nbsp;</a></li>
-                        <li style="display: inline;"><a href="experience.html">Experience &nbsp;</a></li>
-                        <li style="display: inline;"><a href="projects.html">Projects &nbsp;</a></li>
-                        <li style="display: inline;"><a href="achievements.html">Achievements &nbsp;</a></li>
-                        <li style="display: inline;"><a href="technicalskills.html"> Technical Skills &nbsp;</a></li>
-                        
-                    </ul>  
-                </nav>
-                &nbsp;
-            </h3>
+        PERSONAL INFORMATION
+        <h3>
+            <nav>
+                <ul style="display: inline;">
+                    <li style="display: inline;">
+                        <a href="index.html">Home &nbsp;</a>
+                    </li>
+                    <li style="display: inline;"><a href="personalinfo.html">Personal Information &nbsp;</a></li>
+                    <li style="display: inline;"><a href="education.html">Education &nbsp;</a></li>
+                    <li style="display: inline;"><a href="experience.html">Experience &nbsp;</a></li>
+                    <li style="display: inline;"><a href="projects.html">Projects &nbsp;</a></li>
+                    <li style="display: inline;"><a href="achievements.html">Achievements &nbsp;</a></li>
+                    <li style="display: inline;"><a href="technicalskills.html"> Technical Skills &nbsp;</a></li>
+
+                </ul>
+            </nav>
+            &nbsp;
+        </h3>
     </header>
     <main>
         <div>
-            <img src ="profile photo.png">
+            <img src="profile photo.webp">
         </div>
         <div style="text-shadow: 3px 2px 5px rgb(0, 255, 255);">¯\_(ツ)_/¯</div>
         <div style="text-align: left; font-family: 'Courier New', Courier, monospace; padding: 5px">
-            Apoorv Gadiya
+            <br>
+            <i style="font-size: small;">If I had my own wikipedia page</i>
+            <br>
+            <br>
+            <div style="max-width: 65ch;">
+                Apoorv Gadiya is an Indian polymath<span class="truth">[lie]</span> active as a Software Engineer<span
+                    class="truth">[5+ abandoned projects]</span>, astronomer<span class="truth">[amateur
+                    stargazer]</span>, Mathematician<span class="truth">[can't solve an integral]</span>,
+                Entrepreneur<span class="truth">[still 3 months away from mvp]</span>, and a <i>self-proclaimed</i>
+                philosopher<span class="truth">[what am i doing with my life]</span>. He is interested in
+                <special>making money</special> but more than that solving problems<span class="truth">[still can't
+                    solve my own]</span>.
+            </div>
+            <br>
             <br>
             Contact : <a href="mailto:7apoorvg@gmail.com"> Mail</a>
             <br>
             A Quote for you Traveller :
-            <blockquote id="random-quote" style="text-shadow: 0 0 5px wheat;color: wheat;"></blockquote>
+            <blockquote id="random-quote" style="text-shadow: 0 0 5px wheat; color: wheat; max-width: 45ch;">
+            </blockquote>
         </div>
     </main>
     <footer>
         <div class="container">
             <div class="box" id="twitter" onclick="window.open('https://twitter.com/Apoorv7g', '_blank')">
-                <i class="fa-brands fa-square-x-twitter" style="color: #000000;"aria-hidden="true"></i>
+                <i class="fa-brands fa-square-x-twitter" style="color: #000000;" aria-hidden="true"></i>
             </div>
             <div class="box" id="github" onclick="window.open('https://github.com/APOORV7G', '_blank')">
-               <i class="fa-brands fa-github " style="color: #171515;" aria-hidden="true"></i>
-               <!--If you found this comment , Here is a cookie for you 🍪-->
+                <i class="fa-brands fa-github " style="color: #171515;" aria-hidden="true"></i>
+                <!--If you found this comment , Here is a cookie for you 🍪-->
             </div>
             <div class="box" id="linkedin" onclick="window.open('https://www.linkedin.com/in/apoorv-g7', '_blank')">
                 <i class="fa-brands fa-linkedin " style="color: #0e76a8;" aria-hidden="true"></i>
             </div>
-            
+
         </div>
     </footer>
 </body>
 <script>
     let hue = 0;
     function updateColor() {
-      hue = (hue + 1) % 360;
-      document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
+        hue = (hue + 1) % 360;
+        document.querySelector('header').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
+        document.querySelector('special').style.backgroundImage = `linear-gradient(to left, hsl(${hue}, 100%, 50%), hsl(${(hue + 280) % 360}, 100%, 50%))`;
     }
     setInterval(updateColor, 20);
     const quotes = [
-    "The only limit to our realization of tomorrow will be our doubts of today.",
-    "Don't watch the clock; do what it does. Keep going.",
-    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "It always seems impossible until it's done.",
-    "The future belongs to those who believe in the beauty of their dreams.",
-    "Your time is limited, don't waste it living someone else's life.",
-    "Success is stumbling from failure to failure with no loss of enthusiasm.",
-    "The only way to do great work is to love what you do.",
-    "Believe you can and you're halfway there.",
-    "Strive not to be a success, but rather to be of value.",
-    "I find that the harder I work, the more luck I seem to have.",
-    "The only place where success comes before work is in the dictionary.",
-    "Opportunities don't happen. You create them.",
-    "Success usually comes to those who are too busy to be looking for it.",
-    "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
-    "Success is not in what you have, but who you are.",
-    "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.",
-    "Your attitude, not your aptitude, will determine your altitude.",
-    "Don't let yesterday take up too much of today.",
-    "The road to success and the road to failure are almost exactly the same."
-        ];
+        "The only limit to our realization of tomorrow will be our doubts of today.",
+        "Don't watch the clock; do what it does. Keep going.",
+        "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+        "It always seems impossible until it's done.",
+        "The future belongs to those who believe in the beauty of their dreams.",
+        "Your time is limited, don't waste it living someone else's life.",
+        "Success is stumbling from failure to failure with no loss of enthusiasm.",
+        "The only way to do great work is to love what you do.",
+        "Believe you can and you're halfway there.",
+        "Strive not to be a success, but rather to be of value.",
+        "I find that the harder I work, the more luck I seem to have.",
+        "The only place where success comes before work is in the dictionary.",
+        "Opportunities don't happen. You create them.",
+        "Success usually comes to those who are too busy to be looking for it.",
+        "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+        "Success is not in what you have, but who you are.",
+        "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.",
+        "Your attitude, not your aptitude, will determine your altitude.",
+        "Don't let yesterday take up too much of today.",
+        "The road to success and the road to failure are almost exactly the same."
+    ];
 
-        function getRandomQuote() {
-            const randomIndex = Math.floor(Math.random() * quotes.length);
-            return quotes[randomIndex];
-        }
+    function getRandomQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        return quotes[randomIndex];
+    }
 
 
-        document.querySelector('#random-quote').innerText = getRandomQuote();
-  </script>
+    document.querySelector('#random-quote').innerText = getRandomQuote();
+</script>
+
 </html>
