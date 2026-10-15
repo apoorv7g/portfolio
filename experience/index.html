@@ -13,7 +13,7 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet" />
@@ -30,14 +30,14 @@
             <nav>
                 <ul style="display: inline;">
                     <li style="display: inline;">
-                        <a href="index.html">Home &nbsp;</a>
+                        <a href="../">Home &nbsp;</a>
                     </li>
-                    <li style="display: inline;"><a href="personalinfo.html">Personal Information &nbsp;</a></li>
-                    <li style="display: inline;"><a href="education.html">Education &nbsp;</a></li>
-                    <li style="display: inline;"><a href="experience.html">Experience &nbsp;</a></li>
-                    <li style="display: inline;"><a href="projects.html">Projects &nbsp;</a></li>
-                    <li style="display: inline;"><a href="achievements.html">Achievements &nbsp;</a></li>
-                    <li style="display: inline;"><a href="technicalskills.html"> Technical Skills &nbsp;</a></li>
+                    <li style="display: inline;"><a href="../personalinfo/">Personal Information &nbsp;</a></li>
+                    <li style="display: inline;"><a href="../education/">Education &nbsp;</a></li>
+                    <li style="display: inline;"><a href="../experience/">Experience &nbsp;</a></li>
+                    <li style="display: inline;"><a href="../projects/">Projects &nbsp;</a></li>
+                    <li style="display: inline;"><a href="../achievements/">Achievements &nbsp;</a></li>
+                    <li style="display: inline;"><a href="../technicalskills/"> Technical Skills &nbsp;</a></li>
 
                 </ul>
             </nav>
@@ -46,7 +46,7 @@
     </header>
     <main>
         <!-- <div>
-        <img src="profile photo.png" />
+        <img src="../profile photo.png" />
       </div> -->
         <br><br>
         <div style="text-shadow: 3px 2px 5px rgb(0, 255, 255);">¯\_(ツ)_/¯</div>
@@ -54,40 +54,163 @@
         <div class="timeline">
             <div class="timeline-event">
                 <div class="event-date">Feb 2026 - current</div>
-                <div class="event-title"><em>Software Engineer Intern</em></div>
-                <div>
-                    <em>
-                        <special onclick="window.open('https://ratch.ai/', '_blank')" style="cursor: pointer;">Ratch
-                            AI</special>
-                    </em>
+                <div class="event-title">Software Engineer Intern</div>
+                <div class="event-subtitle">
+                    <special onclick="window.open('https://ratch.ai/', '_blank')" style="cursor: pointer;">Ratch AI</special>
+                </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: orange;">GO</button>
+                    <button class="rounded-button" style="background-color: rgb(47, 255, 47);">CONCURRENCY</button>
+                    <button class="rounded-button" style="background-color: #ff0000;">MICROSERVICES</button>
+                    <button class="rounded-button" style="background-color: #0033ff;">POSTGRESQL</button>
+                    <button class="rounded-button" style="background-color: #ff0051;">JENKINS</button>
+                    <button class="rounded-button" style="background-color: rgb(179, 0, 255);">CI/CD</button>
+                    <button class="rounded-button" style="background-color: rgb(0, 255, 179);">LIVEKIT</button>
+                    <button class="rounded-button" style="background-color: #ff00c8;">VAD</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="event-date">May 2026 - July 2026</div>
+                <div class="event-title">GSoC Contributor</div>
+                <div class="event-subtitle">
+                    <a href="https://accordproject.org/" target="_blank">Accord Project</a>
+                </div>
+                <div class="event-description">
+                    <li>
+                        Selected for GSoC 2026 to build automated compilation verification across all 16 Concerto code generation targets (Java, TypeScript, Go, Rust, C#, GraphQL, Protobuf and more), closing a gap where CI only checked that the generator ran without crashing.
+                    </li>
+                    <li>
+                        Architected per-target Docker images bundling the Concerto CLI and language toolchains, publishing to GitHub Container Registry with layer caching to keep CI builds fast.
+                    </li>
+                    <li>
+                        Built a GitHub Actions matrix workflow that generates code from a versioned .cto test corpus and compiles/validates it inside the correct container on every pull request, failing fast on invalid output.
+                    </li>
+                </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: orange;">GO</button>
+                    <button class="rounded-button" style="background-color: rgb(47, 255, 47);">JAVA</button>
+                    <button class="rounded-button" style="background-color: #ff0000;">NODE.JS</button>
+                    <button class="rounded-button" style="background-color: #0033ff;">DOCKER</button>
+                    <button class="rounded-button" style="background-color: #ff0051;">GITHUB ACTIONS</button>
+                    <button class="rounded-button" style="background-color: rgb(179, 0, 255);">CI/CD</button>
+                    <button class="rounded-button" style="background-color: rgb(0, 255, 179);">DISTRIBUTED TESTING</button>
                 </div>
             </div>
             <div class="timeline-event">
                 <div class="event-date">June 2025 - November 2025</div>
-                <div class="event-title"><em>Python Developer Intern</em></div>
+                <div class="event-title">Python Developer Intern</div>
                 <div class="event-subtitle">
                     <a href="https://sriaranea.com/" target="_blank">Sri Aranea</a>
+                </div>
+                <div class="event-description">
+                    <li>
+                        Co-developed the backend architecture of a Flask-React system, implementing secure authentication and role-based access, while building scalable APIs for core workflows and improving operational efficiency by 40%.
+                    </li>
+                    <li>
+                        Outlined and implemented the full database architecture using SQLAlchemy ORM; deployed on a VPS with MySQL, SMTP, and production-grade rate-limiting and request validation.
+                    </li>
+                </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: orange;">SYSTEM DESIGN</button>
+                    <button class="rounded-button" style="background-color: rgb(47, 255, 47);">FLASK</button>
+                    <button class="rounded-button" style="background-color: #ff0000;">MYSQL</button>
+                    <button class="rounded-button" style="background-color: #0033ff;">SQLALCHEMY</button>
+                    <button class="rounded-button" style="background-color: #ff0051;">RBAC</button>
+                    <button class="rounded-button" style="background-color: rgb(179, 0, 255);">REST APIS</button>
+                    <button class="rounded-button" style="background-color: rgb(0, 255, 179);">VPS DEPLOYMENT</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="event-date">December 2024 - January 2025</div>
+                <div class="event-title">Winter Intern</div>
+                <div class="event-subtitle">
+                    <a href="https://sites.google.com/rvu.edu.in/centre-for-ie/home" target="_blank">CIEn, RV University</a>
+                </div>
+                <div class="event-description">
+                    <li>
+                        Built a Patent Drafting Tool that generates 6 different forms and diagrams, and completed 250+ patents with a pipeline for easy retrieval.
+                    </li>
+                    <li>
+                        Streamlined a 120-minute manual process down to 5 minutes, reducing manpower from three people to a single operator.
+                    </li>
+                </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: orange;">APPLICATION DEVELOPMENT</button>
+                    <button class="rounded-button" style="background-color: rgb(47, 255, 47);">ARCHITECTURE DESIGN</button>
+                    <button class="rounded-button" style="background-color: #ff0000;">END-TO-END PIPELINE</button>
                 </div>
             </div>
             <div class="timeline-event">
                 <div class="event-date">October 2024 - April 2025</div>
-                <div class="event-title"><em>Artificial Intelligence Intern</em></div>
+                <div class="event-title">Artificial Intelligence Intern</div>
                 <div class="event-subtitle">
                     <a href="https://www.santaan.in/" target="_blank">Santaan</a>
+                </div>
+                <div class="event-description">
+                    <li>
+                        Designed and trained 30+ deep learning model variants to classify oral and ear scan videos for a public health screening of 1M+ children.
+                    </li>
+                    <li>
+                        Used MobileNetV2, ResNet and LSTM architectures to achieve 85%+ accuracy using data augmentation and cross-validation, while extending the work with minLSTM/minGRU for efficiency.
+                    </li>
+                </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: orange;">DEEP NEURAL NETWORKS</button>
+                    <button class="rounded-button" style="background-color: rgb(47, 255, 47);">TENSORFLOW</button>
+                    <button class="rounded-button" style="background-color: #ff0000;">KERAS</button>
+                    <button class="rounded-button" style="background-color: #0033ff;">OPENCV</button>
+                    <button class="rounded-button" style="background-color: #ff0051;">ROBOFLOW</button>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="event-date">June 2024 - July 2024</div>
+                <div class="event-title">Summer Intern</div>
+                <div class="event-subtitle">
+                    <a href="https://sites.google.com/rvu.edu.in/centre-for-ie/home" target="_blank">CIEn, RV University</a>
+                </div>
+                <div class="event-description">
+                    <li>
+                        Automated a certificate generation application in Python for close to 200 people.
+                    </li>
+                    <li>
+                        Researched and implemented a quantitative trading algorithm using Ichimoku Cloud.
+                    </li>
+                    <li>
+                        Designed educational games for children using mathematical concepts (copyright awaited).
+                    </li>
+                </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: orange;">PYTHON</button>
+                    <button class="rounded-button" style="background-color: rgb(47, 255, 47);">TRADING ALGORITHMS</button>
+                    <button class="rounded-button" style="background-color: #ff0000;">ALGORITHM DESIGN</button>
+                    <button class="rounded-button" style="background-color: #0033ff;">EDUCATIONAL GAMES</button>
                 </div>
             </div>
             <div class="timeline-event">
                 <div class="event-date">March 2024 - September 2024</div>
-                <div class="event-title"><em>Student Intern</em></div>
+                <div class="event-title">Student Intern</div>
                 <div class="event-subtitle">
                     <a href="https://ziroh.com/" target="_blank">Ziroh Labs</a>
                 </div>
+                <div class="event-description">
+                    <li>
+                        Developed a Convolutional Neural Network in Java from scratch, inspired by LeNet-5, under strict no-library constraints.
+                    </li>
+                    <li>
+                        Created 100+ NumPy-style functions covering tensor operations, shape logic and end-to-end testing with JTest.
+                    </li>
+                    <li>
+                        Implemented core ML mechanics from scratch, including backpropagation, axis manipulation and broadcasting.
+                    </li>
+                </div>
+                <div class="button-container">
+                    <button class="rounded-button" style="background-color: orange;">NEURAL NETWORKS</button>
+                    <button class="rounded-button" style="background-color: rgb(47, 255, 47);">JAVA</button>
+                    <button class="rounded-button" style="background-color: #ff0000;">CUSTOM ALGORITHMS</button>
+                    <button class="rounded-button" style="background-color: #0033ff;">MACHINE LEARNING</button>
+                    <button class="rounded-button" style="background-color: #ff0051;">LAMBDA EXPRESSIONS</button>
+                </div>
             </div>
-            <!-- <div class="timeline-event">
-                <div class="event-date">2024</div>
-                <div class="event-title"><em>Student Research Intern</em></div>
-                <div class="event-subtitle"><a href="https://sites.google.com/rvu.edu.in/centre-for-ie/home" target="_blank">CIEn @ RV University</a></div>
-            </div> -->
             <div class="timeline-event">
                 <div class="event-date">20??</div>
                 <div class="event-title"><em>was NULL</em></div>

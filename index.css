@@ -177,14 +177,9 @@
       border: none;
       text-shadow: 0 0 1px black;
       padding: 10px 20px;
-      border-radius: 20px;
+      border-radius: 5px;
       background-color: #4a4343;
       transition: background-color 0.3s ease;
-  }
-
-  .rounded-button:hover {
-      text-shadow: 0 0 3px black;
-      transform: translateY(1px);
   }
 
   special {
